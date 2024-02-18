@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FunFlicks - Unleashing Joy through Movie Madness</title>
+</head>
+<body>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    <header>
+        <div class="container">
+            <h1>FunFlicks</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#watchlist">Watchlist</a></li>
+                    <li><a href="#quiz">Quiz Zone</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to FunFlicks</h2>
+            <p>Discover a world of movies, quizzes, and community discussions. Join the fun today!</p>
+            <a href="#watchlist" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="watchlist">
+        <div class="container">
+            <h2>Your Watchlist</h2>
+            <p>Curate your personal collection of must-watch movies. Add and remove movies at your convenience.</p>
+            <ul>
+                <li>Movie 1</li>
+                <li>Movie 2</li>
+                <li>Movie 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <div class="container">
+            <h2>Quiz Zone</h2>
+            <p>Challenge your movie knowledge with our interactive quizzes. Compete with friends and climb the leaderboard.</p>
+            <a href="#quiz" class="cta-button">Start Quiz</a>
+        </div>
+    </section>
+
+    <section id="community">
+        <div class="container">
+            <h2>Community Discussions</h2>
+            <p>Engage in conversations with fellow movie enthusiasts. Share your thoughts, get recommendations, and join the discussion!</p>
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="container">
+            <h2>Your Profile</h2>
+            <p>Track your movie-watching history, achievements, and quiz scores. Your journey with FunFlicks starts here!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FunFlicks. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+document.addEventListener("DOMContentLoaded", function () {
+    // Sample watchlist data
+    const watchlistData = ["Inception", "The Shawshank Redemption", "The Dark Knight"];
+
+    // Display watchlist on page load
+    displayWatchlist();
+
+    // Add movie to watchlist button click event
+    document.getElementById("add-to-watchlist").addEventListener("click", function () {
+        const movieName = prompt("Enter the name of the movie:");
+        if (movieName) {
+            addToWatchlist(movieName);
+        }
+    });
+
+    // Function to display watchlist
+    function displayWatchlist() {
+        const watchlistContainer = document.getElementById("watchlist-container");
+        watchlistContainer.innerHTML = "<h2>Your Watchlist</h2><ul></ul>";
+
+        const watchlistUl = watchlistContainer.querySelector("ul");
+        watchlistData.forEach(function (movie) {
+            const li = document.createElement("li");
+            li.textContent = movie;
+            watchlistUl.appendChild(li);
+        });
+    }
+
+    // Function to add a movie to the watchlist
+    function addToWatchlist(movieName) {
+        watchlistData.push(movieName);
+        displayWatchlist();
+    }
+});
+
