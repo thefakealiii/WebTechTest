@@ -8,7 +8,8 @@ let hangmanImages = [
   'hangman3.png',
   'hangman4.png',
   'hangman5.png',
-  'hangman6.png'
+  'hangman6.png',
+  'hangman7.png'
 ];
 
 function displayWord() {
