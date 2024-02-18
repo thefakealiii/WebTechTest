@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#word {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#guesses {
+  margin-bottom: 20px;
+}
+
+#message {
+  font-weight: bold;
+  color: red;
+}
