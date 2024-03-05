@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f0f0; /* Light gray background */
+  background: linear-gradient(to right, #e0eefa, #b8dffe); /* Gradient background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@ body {
 .container {
   background-color: #fff; /* White container */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
   padding: 40px;
   text-align: center;
 }
@@ -23,7 +23,7 @@ header {
 
 h1 {
   font-size: 2em;
-  color: #3498db; /* Light blue heading */
+  color: #34495e; /* Dark blue heading */
   margin-bottom: 10px;
 }
 
@@ -35,12 +35,20 @@ h1 {
 
 .game-option {
   text-align: center;
+  background-color: #f0f8ff; /* Light blue background for each option */
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.game-option:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }
 
 h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #3498db; /* Light blue heading color */
+  color: #34495e; /* Dark blue heading color */
 }
 
 p {
@@ -51,7 +59,7 @@ p {
 }
 
 .cta-button {
-  background-color: #f1c40f; /* Orange call to action button */
+  background-color: #6772e5; /* Dark blue call to action button */
   color: #fff; /* White text */
   padding: 10px 20px;
   border: none;
@@ -61,5 +69,5 @@ p {
 }
 
 .cta-button:hover {
-  background-color: #e6a90b; /* Darker orange on hover */
+  background-color: #535c9a; /* Darker blue on hover */
 }
