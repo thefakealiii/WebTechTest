@@ -3,13 +3,13 @@ let selectedWord = words[Math.floor(Math.random() * words.length)];
 let guessedLetters = [];
 let remainingGuesses = 6;
 let hangmanImages = [
-  'hangman1.png',
-  'hangman2.png',
-  'hangman3.png',
-  'hangman4.png',
-  'hangman5.png',
-  'hangman6.png',
-  'hangman7.png'
+  'hangman/hangman1.png',
+  'hangman/hangman2.png',
+  'hangman/hangman3.png',
+  'hangman/hangman4.png',
+  'hangman/hangman5.png',
+  'hangman/hangman6.png',
+  'hangman/hangman7.png'
 ];
 
 function displayWord() {
